@@ -23,7 +23,7 @@ print(f"Sum: {sum(numbers)}")            # 19
 numbers_list = list(numbers)
 print(f"As list: {numbers_list}")
 new_tuple = tuple(numbers_list)
-print(f"Back to tuple: {new_tuple}")
+print(f"Back to tuple: {new_tuple}") #แปลงลิสเป็น turple เป็น list แก้เสร็จแปลงกลับเป็น turple
 
 # Concatenation and repetition
 tuple1 = (1, 2, 3)
