@@ -20,9 +20,3 @@ tax = price * (tax_percent / 100)
 # TODO: Calculate final total
 final_total = price + tax 
 
-# TODO: Display itemized receipt
-print("subtotal:", subtotal)
-print("discount:", discount)
-print("price after discount:", price)
-print("Tax:", tax)
-print("final total:", final_total)
