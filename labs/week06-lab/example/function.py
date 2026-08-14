@@ -21,7 +21,7 @@ print() #การใช้งานฟังก์ชัน
 # Example 2: Function that performs a task
 def draw_separator():
     """Draws a line separator"""
-    print("-" * 40) #ทำทุกอย่างในฟังก์ชันนี้
+    print("-" * 40) #ทำทุกอย่างในฟังก์ชันนี้ #ถ้าคูณอยู่ตรงกลางระหว่าง "-" มีประเภทข้อมูลเป็น string 
 
 draw_separator()
 print("This is between separators")
@@ -53,20 +53,20 @@ def introduce_person(name, age, city):
     print()
 
 print("Calling introduce_person:")
-introduce_person("Diana", 25, "New York") 
+introduce_person("Diana", 25, "New York")  #กลับไปดูdef introduce_person(name, age, city):
 introduce_person("Eve", 30, "Los Angeles")
 
 # Example 3: Mathematical function
 def calculate_rectangle_area(length, width):
     """Calculates and displays rectangle area"""
-    area = length * width
+    area = length * width 
     print(f"Rectangle with length {length} and width {width}")
     print(f"Area = {length} × {width} = {area}")
     print()
 
 print("Calculating rectangle areas:")
 calculate_rectangle_area(5, 3) #กลับไปรันบรรทัดที่ def calculate_rectangle_area(length, width):
-calculate_rectangle_area(10, 7)
+calculate_rectangle_area(10, 7)#กลับไปรันบรรทัดที่ def calculate_rectangle_area(length, width):
 
 # =============================================================================
 # PART 3: FUNCTIONS WITH RETURN VALUES
@@ -94,11 +94,11 @@ def get_circle_info(radius):
     area = pi * radius * radius
     circumference = 2 * pi * radius
     volumn = 4.0 / 3 * pi * radius ** 3
-    return area, circumference
+    return area, circumference #return ข้อมูลมากกว่า 1 ค่า
 
 print("Circle calculations:") #return มากกว่า 1 ค่าได้
 radius = 5
-area, circumference = get_circle_info(radius) #เอาตัวแปรมาเก็บที่นี่
+area, circumference, volumn = get_circle_info(radius) #เอาตัวแปรมาเก็บที่นี่
 print(f"Circle with radius {radius}:")
 print(f"Area: {area:.2f}")
 print(f"Circumference: {circumference:.2f}")
@@ -108,7 +108,8 @@ print()
 # Example 3: Using returned values in expressions
 def multiply(x, y):
     """Multiplies two numbers"""
-    return x * y
+    return x * y   #return ค่าตัวแปร
+    return result  #return ผลลัพธ์ของตัวแปร
 
 def square(n):
     """Returns the square of a number"""
