@@ -116,3 +116,4 @@ def convert_currency(value,currency):
 
     convert_currency(100,"USD")
     convert_currency(100,"THB")
+

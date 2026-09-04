@@ -9,9 +9,9 @@ print("=== STRING CREATION ===")
 # Different ways to create strings
 name = "India"
 graduate = 'B.E.'
-multiline = """This is a
-multiline string
-example"""
+multiline = """This is a 
+multiline string  
+example""" #ประกาศตัวแปรขึ้นบรรทัดใหม่ได้ด้วย """
 
 print(f"name = {name}")
 print(f"graduate = {graduate}")
@@ -27,11 +27,11 @@ name = input("Enter your name: ")
 print(f"Hello {name}")
 
 # Converting string to number
-apple = input("Enter a number: ")
+apple = input("Enter a number: ")#บอกผู้ใช้ว่ากรอกตัวเลข
 try:
     x = int(apple) - 10
-    print(f"Result: {x}")
-except ValueError:
+    print(f"Result: {x}") #แปลงตัวอัษรไม่ได้
+except ValueError: 
     print("Please enter a valid number!")
 
 # ===========================
@@ -40,13 +40,13 @@ except ValueError:
 
 print("\n=== STRING INDEXING ===")
 fruit = 'banana'
-print(f"fruit = {fruit}")
+print(f"fruit = {fruit}") #fruit = banana
 print(f"fruit[1] = {fruit[1]}")  # 'a'
 
 n = 3
 w = fruit[n - 1]  # fruit[2]
-print(f"n = {n}")
-print(f"w = fruit[n-1] = {w}")  # 'n'
+print(f"n = {n}") #n = 3
+print(f"w = fruit[n-1] = {w}")  #w = fruit[n-1] = n
 
 # Show indexing diagram
 print("\nIndexing visualization:")
@@ -58,7 +58,7 @@ print("-6-5-4-3-2-1")
 # 4. TRAVERSING STRINGS
 # ===========================
 
-print("\n=== TRAVERSING STRINGS ===")
+print("\n=== TRAVERSING STRINGS ===") #อักขระอะไรไได้
 message = "hello"
 index = 0
 
@@ -67,7 +67,7 @@ for i, char in enumerate(message):
     print(f"message[{i}] = {char}")
 
 print("\nMethod 2: Manual indexing")
-index = 0
+index = 0 #เดินผลลัพธฺุจากก 0
 for char in message:
     print(f"message[{index}] = {char}")
     index += 1
@@ -77,7 +77,7 @@ for char in message:
 # ===========================
 
 print("\n=== CONCATENATION AND MULTIPLICATION ===")
-str1 = 'Hello'
+str1 = 'Hello' #===concetenation and multiplication
 str2 = 'World!'
 
 # Concatenation
@@ -86,7 +86,7 @@ print(f"str1 + str2 = {result}")
 
 # Multiplication
 repeat = str1 * 3
-print(f"str1 * 3 = {repeat}")
+print(f"str1 * 3 = {repeat}") #str1*3 = HelloHelloHello
 
 # ===========================
 # 6. APPENDING STRINGS
@@ -94,10 +94,10 @@ print(f"str1 * 3 = {repeat}")
 
 print("\n=== APPENDING STRINGS ===")
 greeting = 'hello'
-name = input("Enter your name: ")
-greeting += name
+name = input("Enter your name: ")#สมมติผู้ใช้พิมพ์ boonchoo
+greeting += name #helloboonchoo
 greeting += ". welcome to pune"
-print(greeting)
+print(greeting)#helloboonchoo welcome to pune
 
 # ===========================
 # 7. ITERATING AND COUNTING
@@ -109,14 +109,14 @@ text = 'Hello World'
 for letter in text:
     if letter == 'l':
         count += 1
-print(f"{count} letters 'l' found in '{text}'")
+print(f"{count} letters 'l' found in '{text}'")#0 letter 'l' found in 'Hello world'
 
 # ===========================
 # 8. MEMBERSHIP TEST
 # ===========================
 
 print("\n=== MEMBERSHIP TEST ===")
-print("'a' in 'program':", 'a' in 'program')  # True
+print("'a' in 'program':", 'a' in 'program')  # True #
 print("'at' not in 'battle':", 'at' not in 'battle')  # False
 
 # ===========================
@@ -126,7 +126,7 @@ print("'at' not in 'battle':", 'at' not in 'battle')  # False
 print("\n=== STRING IMMUTABILITY ===")
 str1 = "Hello"
 print(f"str1 is {str1}")
-print(f"id of str1 is {id(str1)}")
+print(f"id of str1 is {id(str1)}")#ฟังก์ชัน id หา reference ของตัวแปร คล้าย pointer ของภาษา c
 
 str2 = "world"
 print(f"str2 is {str2}")
@@ -146,11 +146,12 @@ print(f"id of str3 is {id(str3)}")  # Same ID as current str1
 
 print("\n=== ESCAPE CHARACTERS ===")
 print("New line example:")
-print("Line 1\nLine 2")
+print("Line 1\nLine 2")#ผล line 1 
+                           #line 2
 
 print("Tab example:")
 print("Column1\tColumn2\tColumn3")
-
+#column1    column2   column3
 print("Backslash example:")
 print("Path: C:\\Users\\Python")
 
@@ -174,8 +175,8 @@ print("\n=== STRING FORMATTING ===")
 name = "ashish"
 age = 8
 print("Using %% formatting:")
-print("name=%s and age=%d" % (name, age))
-print("name=%s and age=%d" % ("ankita", 6))
+print("name=%s and age=%d" % (name, age))#ภาษาc 
+print("name=%s and age=%d" % ("ankita", 6))#ภาษา python
 
 # .format() method
 print("\nUsing .format() method:")
@@ -185,9 +186,11 @@ sal = 20000
 
 # Different format styles
 str1 = '{},{},{}'.format(id_num, name, sal)
+strl = f'{id_num},{name},{sal}'
 print(str1)  # 10,shankar,20000
 
 str2 = '{} - {} - {}'.format(id_num, name, sal)
+str2 = f'{id_num} - {name} - {sal}'
 print(str2)  # 10 - shankar - 20000
 
 str3 = 'id={}\nname={}\nsal={}'.format(id_num, name, sal)
@@ -205,7 +208,7 @@ print(f"Original: {text}")
 print(f"Upper: {text.upper()}")
 print(f"Lower: {text.lower()}")
 print(f"Title: {text.title()}")
-print(f"Capitalize: {text.capitalize()}")
+print(f"Capitalize: {text.capitalize()}")#capitalize ทำให้ตัวอักษรแรกของทุกคำเป็นตัวใหญ่
 
 # Search methods
 print(f"Find 'world': {text.find('world')}")
@@ -215,18 +218,18 @@ print(f"Ends with 'python': {text.endswith('python')}")
 
 # Modification methods
 print(f"Replace 'python' with 'java': {text.replace('python', 'java')}")
-words = text.split()
+words = text.split()#['welcome','to',the','world','of','java']
 print(f"Split into words: {words}")
 print(f"Join with '-': {'-'.join(words)}")
-
+welcome-to-the-world-of-java
 # Validation methods
 test_str = "Hello123"
 print(f"\nValidation methods for '{test_str}':")
-print(f"isalnum(): {test_str.isalnum()}")
-print(f"isalpha(): {test_str.isalpha()}")
-print(f"isdigit(): {test_str.isdigit()}")
-print(f"isupper(): {test_str.isupper()}")
-print(f"islower(): {test_str.islower()}")
+print(f"isalnum(): {test_str.isalnum()}")#T
+print(f"isalpha(): {test_str.isalpha()}")#F
+print(f"isdigit(): {test_str.isdigit()}")#F
+print(f"isupper(): {test_str.isupper()}")#F
+print(f"islower(): {test_str.islower()}")#F
 
 # ===========================
 # 13. ORD() AND CHR() FUNCTIONS
