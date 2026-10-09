@@ -1,10 +1,11 @@
 # Parent class (Base class)
-class Animal:
-    
+class Animal: #inheritance = การถ่ายทอด
+
+        #constructure method
     def __init__(self, name, species):
         self.name = name
         self.species = species
-        self.is_alive = True
+        self.is_alive = True #data จำเป็นต้องใช้
     
     def eat(self):
         print(f"{self.name} is eating")
@@ -24,6 +25,8 @@ class Dog(Animal):
     # Method overriding
     def make_sound(self):
         print(f"{self.name} barks: Woof!")
+
+    
     
     # New method specific to Dog
     def fetch(self):

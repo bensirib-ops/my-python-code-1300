@@ -15,7 +15,7 @@ class BankAccount:
             self.__balance += amount
             self.__transaction_history.append(f"Deposit: +${amount}")
             return True
-        return False
+        return False #เข้าถึงข้อมูลอ่านข้อมูลเขียนข้อมูล
     
     # Public method to withdraw money
     def withdraw(self, amount):
