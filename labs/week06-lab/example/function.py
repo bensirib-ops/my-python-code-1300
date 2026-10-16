@@ -7,6 +7,7 @@
 # =============================================================================
 print("=== PART 1: BASIC FUNCTIONS ===")
 
+<<<<<<< HEAD
 # Example 1: Simple function without parameters #ทำงานได้โดยไม่ใช้ input
 def say_hello(): #หลัง colon ต้องมี 1 statement 
     """A simple function that prints a greeting"""
@@ -17,11 +18,27 @@ def say_hello(): #หลัง colon ต้องมี 1 statement
 print("Calling say_hello():")
 say_hello() #การใช้งานฟังก์ชัน
 print() #การใช้งานฟังก์ชัน
+=======
+# Example 1: Simple function without parameters
+def say_hello():
+    """A simple function that prints a greeting"""
+    print("Hello, World!")
+    print("Welcome to Python functions!")
+
+# Calling the function
+print("Calling say_hello():")
+say_hello()
+print()
+>>>>>>> upstream/main
 
 # Example 2: Function that performs a task
 def draw_separator():
     """Draws a line separator"""
+<<<<<<< HEAD
     print("-" * 40) #ทำทุกอย่างในฟังก์ชันนี้ #ถ้าคูณอยู่ตรงกลางระหว่าง "-" มีประเภทข้อมูลเป็น string 
+=======
+    print("-" * 40)
+>>>>>>> upstream/main
 
 draw_separator()
 print("This is between separators")
@@ -39,10 +56,17 @@ def greet_person(name):
     print(f"Hello, {name}! Nice to meet you.")
 
 print("Calling greet_person with different names:")
+<<<<<<< HEAD
 greet_person("Alice")#กลับไปมอง print(f"Hello, {name}! Nice to meet you.") 
 greet_person("Bob")#กลับไปมอง print(f"Hello, {name}! Nice to meet you.") 
 greet_person("Charlie")#กลับไปมอง print(f"Hello, {name}! Nice to meet you.") 
 print() #print ปล่าว
+=======
+greet_person("Alice")
+greet_person("Bob")
+greet_person("Charlie")
+print()
+>>>>>>> upstream/main
 
 # Example 2: Function with multiple parameters
 def introduce_person(name, age, city):
@@ -53,20 +77,33 @@ def introduce_person(name, age, city):
     print()
 
 print("Calling introduce_person:")
+<<<<<<< HEAD
 introduce_person("Diana", 25, "New York")  #กลับไปดูdef introduce_person(name, age, city):
+=======
+introduce_person("Diana", 25, "New York")
+>>>>>>> upstream/main
 introduce_person("Eve", 30, "Los Angeles")
 
 # Example 3: Mathematical function
 def calculate_rectangle_area(length, width):
     """Calculates and displays rectangle area"""
+<<<<<<< HEAD
     area = length * width 
+=======
+    area = length * width
+>>>>>>> upstream/main
     print(f"Rectangle with length {length} and width {width}")
     print(f"Area = {length} × {width} = {area}")
     print()
 
 print("Calculating rectangle areas:")
+<<<<<<< HEAD
 calculate_rectangle_area(5, 3) #กลับไปรันบรรทัดที่ def calculate_rectangle_area(length, width):
 calculate_rectangle_area(10, 7)#กลับไปรันบรรทัดที่ def calculate_rectangle_area(length, width):
+=======
+calculate_rectangle_area(5, 3)
+calculate_rectangle_area(10, 7)
+>>>>>>> upstream/main
 
 # =============================================================================
 # PART 3: FUNCTIONS WITH RETURN VALUES
@@ -80,7 +117,11 @@ def add_numbers(a, b):
     return result
 
 print("Using functions that return values:")
+<<<<<<< HEAD
 sum1 = add_numbers(5, 3) #sum 1 = 8
+=======
+sum1 = add_numbers(5, 3)
+>>>>>>> upstream/main
 sum2 = add_numbers(10, 7)
 print(f"5 + 3 = {sum1}")
 print(f"10 + 7 = {sum2}")
@@ -93,6 +134,7 @@ def get_circle_info(radius):
     pi = 3.14159
     area = pi * radius * radius
     circumference = 2 * pi * radius
+<<<<<<< HEAD
     volumn = 4.0 / 3 * pi * radius ** 3
     return area, circumference #return ข้อมูลมากกว่า 1 ค่า
 
@@ -103,23 +145,42 @@ print(f"Circle with radius {radius}:")
 print(f"Area: {area:.2f}")
 print(f"Circumference: {circumference:.2f}")
 print(f"Volumn : {volumn:.2f}")
+=======
+    return area, circumference
+
+print("Circle calculations:")
+radius = 5
+area, circumference = get_circle_info(radius)
+print(f"Circle with radius {radius}:")
+print(f"Area: {area:.2f}")
+print(f"Circumference: {circumference:.2f}")
+>>>>>>> upstream/main
 print()
 
 # Example 3: Using returned values in expressions
 def multiply(x, y):
     """Multiplies two numbers"""
+<<<<<<< HEAD
     return x * y   #return ค่าตัวแปร
     return result  #return ผลลัพธ์ของตัวแปร
+=======
+    return x * y
+>>>>>>> upstream/main
 
 def square(n):
     """Returns the square of a number"""
     return n * n
 
+<<<<<<< HEAD
 def square_root(n):
     return n ** 0.5
 
 print("Using return values in expressions:")
 result = multiply(4, 5) + square(3) #square แปลว่ายกกำลัง 2 
+=======
+print("Using return values in expressions:")
+result = multiply(4, 5) + square(3)
+>>>>>>> upstream/main
 print(f"multiply(4, 5) + square(3) = {multiply(4, 5)} + {square(3)} = {result}")
 print()
 
@@ -129,7 +190,11 @@ print()
 print("\n=== PART 4: DEFAULT PARAMETERS ===")
 
 # Example 1: Function with default parameter
+<<<<<<< HEAD
 def greet_with_title(name, title="Mr./Ms."):#ถ้าไม่ส่งจะขี้นMr./Ms.
+=======
+def greet_with_title(name, title="Mr./Ms."):
+>>>>>>> upstream/main
     """Greets person with optional title"""
     print(f"Hello, {title} {name}!")
 
